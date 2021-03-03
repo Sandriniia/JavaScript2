@@ -22,7 +22,7 @@ function doubleEvenNumbers(numbers) {
   const evenNumbers = numbers.filter((number) => {
     return number % 2 === 0 && number !== 0;
   });
-  const doubleNumbers = evenNumbers.map((number) => {
+  evenNumbers.map((number) => {
     let double = number * 2;
     doubleEvenNumbers.push(double);
   });
