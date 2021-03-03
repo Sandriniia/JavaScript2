@@ -16,11 +16,6 @@ const bookTitles = [
 ];
 
 const bookInfo = {
-  sailor_song: {
-    title: 'Sailor song',
-    language: 'english',
-    author: 'Ken Kesey',
-  },
   lame_fate: {
     title: 'Lame fate',
     language: 'russian',
@@ -30,6 +25,11 @@ const bookInfo = {
     title: 'Roadside picnic',
     language: 'russian',
     author: 'Arkady Strugatsky and Boris Strugatsky',
+  },
+  sailor_song: {
+    title: 'Sailor song',
+    language: 'english',
+    author: 'Ken Kesey',
   },
   a_mind_for_numbers: {
     title: 'A mind for numbers',
@@ -69,13 +69,13 @@ const bookInfo = {
 };
 
 const bookCovers = {
-  sailor_song: './images/sailor_song.jpg',
   lame_fate: './images/lame_fate.jpg',
   roadside_picnic: './images/roadside_picnic.jpg',
+  sailor_song: './images/sailor_song.jpg',
   a_mind_for_numbers: './images/a_mind_for_numbers.jpg',
   other_shores: './images/other_shores.jpg',
-  the_luzhin_defense: './images/the_luzhin_defense.jpg',
   the_brothers_karamazov: './images/the_brothers_karamazov.jpg',
+  the_luzhin_defense: './images/the_luzhin_defense.jpg',
   one_flew_over_the_cuckoos_nest: './images/one_flew_over_the_cuckoo_nest.jpg',
   sharp_objects: './images/sharp_objects.jpg',
   the_idiot: './images/the_idiot.jpg',

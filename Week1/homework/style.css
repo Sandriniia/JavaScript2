@@ -4,7 +4,7 @@ body {
 .main {
   margin: 0 auto;
   font-family: 'Brygada 1918', serif;
-  background-color: #1d2247;
+  background-color: #500805;
 }
 
 ul {
@@ -13,13 +13,14 @@ ul {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  margin-left: 20px;
+  gap: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .book_image {
-  width: 180px;
-  height: 280px;
+  width: 210px;
+  height: 300px;
   transition: transform 200ms linear;
 }
 
@@ -28,17 +29,23 @@ ul {
 }
 
 .book_container {
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background-color: #d09683;
+  min-width: 200px;
+  height: 570px;
+  border-radius: 10px;
 }
 
 .title {
   margin: 0;
-  margin-top: 40px;
-  color: #fff;
-  font-size: 27px;
-  width: 180px;
+  margin-top: 25px;
+  color: #500805;
+  font-size: 29px;
+  width: 200px;
   text-align: center;
   min-height: 93px;
 }
@@ -46,19 +53,18 @@ ul {
 .book_author {
   margin: 0;
   margin-top: 20px;
-  color: #fff;
-  font-size: 18px;
+  color: #500805;
+  font-size: 19px;
   width: 180px;
-  height: 45px;
   text-align: center;
 }
 
 .book_language {
   margin: 0;
-  margin-top: 10px;
-  margin-bottom: 30px;
   color: #fff;
   font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   width: 180px;
   text-align: center;
 }
