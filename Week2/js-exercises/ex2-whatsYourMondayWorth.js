@@ -10,13 +10,8 @@
  Make sure the function can be used on any array of objects that contain a duration property with a number value
 
  */
-
-
-function dayWorth(tasks, hourlyRate) {
-  // put your code in here, the function does returns a euro formatted string
-}
-
-const mondayTasks = [{
+const mondayTasks = [
+  {
     name: 'Daily standup',
     duration: 30, // specified in minutes
   },
@@ -34,5 +29,35 @@ const mondayTasks = [{
   },
 ];
 
-console.log(dayWorth(mondayTasks, 25))
-console.log(dayWorth(mondayTasks, 13.37))
+const tuesdayTasks = [
+  {
+    name: 'Daily standup',
+  },
+  {
+    name: 'Feature discussion',
+    duration: '120',
+  },
+  {
+    name: 'Development time',
+    duration: 240,
+  },
+  {
+    name: 'Talk to different members from the product team',
+    duration: 60,
+  },
+];
+
+function dayWorth(tasks, hourlyRate) {
+  let sum = 0;
+  tasks.map((task) => {
+    if (task.duration && typeof task.duration === 'number') {
+      let taskRate = (task.duration / 60) * hourlyRate;
+      sum += taskRate;
+    }
+  });
+  return (sum = `€ ${sum.toFixed(2)}`);
+}
+
+console.log(dayWorth(mondayTasks, 25));
+console.log(dayWorth(mondayTasks, 13.37));
+console.log(dayWorth(tuesdayTasks, 25));
