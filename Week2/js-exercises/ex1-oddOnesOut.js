@@ -18,18 +18,18 @@
 // }
 
 function doubleEvenNumbers(numbers) {
-  let doubleEvenNumbers = [];
-  const evenNumbers = numbers.filter((number) => {
+  const doubleNumbers = [];
+  const evenNumbers = numbers.filter(number => {
     return number % 2 === 0 && number !== 0;
   });
-  evenNumbers.map((number) => {
-    let double = number * 2;
-    doubleEvenNumbers.push(double);
+  evenNumbers.map(number => {
+    const double = number * 2;
+    return doubleNumbers.push(double);
   });
-  return doubleEvenNumbers;
+  return doubleNumbers;
 }
 
-const myNumbers = [1, 2, 3, 4];
+const someNumbers = [1, 2, 3, 4];
 const otherNumbers = [7, 1, 5, 14, 2, 18, 4, 0];
-console.log(doubleEvenNumbers(myNumbers)); // Logs "[4, 8]" to the console
+console.log(doubleEvenNumbers(someNumbers)); // Logs "[4, 8]" to the console
 console.log(doubleEvenNumbers(otherNumbers));

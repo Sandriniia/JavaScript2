@@ -1,22 +1,21 @@
 'use strict';
 
 function doubleOddNumbers(numbers) {
-  let doubleOddNumbers = [];
-  const oddNumbers = numbers.filter((number) => {
-    return number % 2 !== 0 && number !== 0;
+  const doubleOddNum = [];
+  const oddNumbers = numbers.filter(number => number % 2 !== 0 && number !== 0);
+  oddNumbers.map(number => {
+    const double = number * 2;
+    return doubleOddNum.push(double);
   });
-  oddNumbers.map((number) => {
-    let double = number * 2;
-    doubleOddNumbers.push(double);
-  });
-  return doubleOddNumbers;
+  return doubleOddNum;
 }
 
-const someNumbers = [1, 2, 3, 4];
-console.log(doubleOddNumbers(someNumbers));
+const myNumbers = [1, 2, 3, 4];
+const double = doubleOddNumbers(myNumbers);
+console.log(double);
 
 // Do not change or remove anything below this line
 module.exports = {
-  someNumbers,
+  myNumbers,
   doubleOddNumbers,
 };
