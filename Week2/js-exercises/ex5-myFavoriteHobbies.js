@@ -21,10 +21,10 @@ const container = document.querySelector('.main');
 function createHTMLList(arr) {
   const ul = document.createElement('ul');
   container.append(ul);
-  arr.map((hobbie) => {
+  arr.map(hobbie => {
     const li = document.createElement('li');
     ul.append(li);
-    li.append(hobbie);
+    return li.append(hobbie);
   });
 }
 

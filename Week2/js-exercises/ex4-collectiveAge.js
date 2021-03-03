@@ -28,9 +28,7 @@ const hackYourFutureMembers = [
 ];
 
 function collectiveAge(people) {
-  const sumOfAge = people.reduce(function (accumulator, person) {
-    return accumulator + person['age'];
-  }, 0);
+  const sumOfAge = people.reduce((accumulator, person) => accumulator + person.age, 0);
   return sumOfAge;
 }
 

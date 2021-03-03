@@ -49,13 +49,14 @@ const tuesdayTasks = [
 
 function dayWorth(tasks, hourlyRate) {
   let sum = 0;
-  tasks.map((task) => {
+  tasks.map(task => {
     if (task.duration && typeof task.duration === 'number') {
-      let taskRate = (task.duration / 60) * hourlyRate;
+      const taskRate = (task.duration / 60) * hourlyRate;
       sum += taskRate;
     }
+    return sum;
   });
-  return (sum = `€ ${sum.toFixed(2)}`);
+  return `€ ${sum.toFixed(2)}`;
 }
 
 console.log(dayWorth(mondayTasks, 25));

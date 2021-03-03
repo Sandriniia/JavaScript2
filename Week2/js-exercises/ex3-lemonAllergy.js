@@ -14,9 +14,7 @@
 const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Watermelon', 'Lemon'];
 
 function takeOutLemons(basket) {
-  const basketWithoutLemons = basket.filter((fruit) => {
-    return fruit !== 'Lemon';
-  });
+  const basketWithoutLemons = basket.filter(fruit => fruit !== 'Lemon');
   return `My mom bought me a fruit basket, containing ${basketWithoutLemons}`;
 }
 
