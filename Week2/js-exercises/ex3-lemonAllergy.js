@@ -11,11 +11,13 @@
 
  */
 
+const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Watermelon', 'Lemon'];
 
 function takeOutLemons(basket) {
-  // your code goes in here. The output is a string 
+  const basketWithoutLemons = basket.filter((fruit) => {
+    return fruit !== 'Lemon';
+  });
+  return `My mom bought me a fruit basket, containing ${basketWithoutLemons}`;
 }
-
-const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Watermelon', 'Lemon'];
 
 console.log(takeOutLemons(fruitBasket));
